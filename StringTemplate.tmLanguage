@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>StringTemplate</string>
+	<key>fileTypes</key>
+	<array>
+		<string>st</string>
+		<string>stg</string>
+	</array>
+	<key>patterns</key>
+	<array>
+
+		<dict>
+			<key>begin</key>
+			<string>(?=/\*)</string>
+			<key>end</key>
+			<string>(?&lt;=\*/)</string>
+			<key>name</key>
+			<string>comment.block.antlr</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>::\=|&lt;&lt;|&gt;&gt;</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.augmented.stringtemplate</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>Fragments</string>
+			<key>match</key>
+			<string>^[a-zA-Z][a-zA-Z]*\([a-zA-Z][a-zA-Z]*(, [a-zA-Z][a-zA-Z]*)*\)</string>
+			<key>name</key>
+			<string>storage.type.antlr</string>
+		</dict>
+
+		<dict>
+			<key>comment</key>
+			<string>Double quoted strings or characters</string>
+			<key>begin</key>
+			<string>&lt;</string>
+			<key>end</key>
+			<string>&gt;</string>
+			<key>name</key>
+			<string>string.quoted.single.single-line.antlr</string>
+		</dict>
+
+	</array>
+	<key>scopeName</key>
+	<string>source.stringtemplate</string>
+	<key>uuid</key>
+	<string>eb5d6c6d-9170-4e02-baf3-8a62ed60b276</string>
+</dict>
+</plist>
