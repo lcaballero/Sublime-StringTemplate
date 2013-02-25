@@ -1,8 +1,8 @@
 # Sublime Antlr
 
-Adds colors to both `.stg` an `.st` files.
+Adds colors to both `.stg` and `.st` files.
 
-This syntax file highlighting is not sophisticated, and so there is a lot of
+My attempt here to syntax highlighting these files is not sophisticated, and so there is a lot of
 room for improvement.
 
 # License
